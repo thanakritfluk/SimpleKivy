@@ -1,0 +1,26 @@
+<MyBoxLayout>
+    orientation: 'vertical'
+    Label:
+        id: title
+        text: 'Water Intake Calculator'
+        size_hint: (1,.3)
+        font_size: 40
+    Label:
+        text: "Body Weight (kg):"
+        size_hint: (1,.3)
+    TextInput:
+        id: weight_input
+        text: ""
+        font_size: 30
+        multiline: False
+        size_hint: (.5,.1)
+        pos_hint: {'center_x':.5}
+    Label:
+        id: result
+        text: "Result"
+        size_hint: (1,.3)
+    Button:
+        id: compute
+        text: 'Calculate'
+        size_hint: (1, .2)
+        on_release: root.calculate()
